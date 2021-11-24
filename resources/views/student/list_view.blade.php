@@ -10,10 +10,11 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <?php $i=1;?>
                     @if(count($results) > 0)
                     @foreach ($results as $data)
                     <tr>
-                      <td>{{ $data->id }}</td>
+                      <td>{{$i++}}</td>
                       <td>{{ $data->name }}</td>
                       <td>{{ $data->age }}</td>
                       <td>{{ config('constant.Gender')[$data->gender] }}</td>

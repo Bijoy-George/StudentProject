@@ -19,7 +19,7 @@ class StudentController extends Controller
 
     public function studentList(Request $request)
     {
-        $results = Student::paginate();
+        $results = Student::paginate(10);
         $html = view('student.list_view')->with(compact('results'))->render();
         $result_arr=array('success' => true,'html' => $html);
         return json_encode($result_arr);
