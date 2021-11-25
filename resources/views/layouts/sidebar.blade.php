@@ -35,6 +35,14 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ url('/marks') }}" class="nav-link @if(strpos(Route::current()->uri, 'marks') === 0) active @endif">
+                <i class="fab fa-accusoft"></i>
+                  <p>
+                    Mark Sheet
+                  </p>
+                </a>
+              </li>
           
         </ul>
       </nav>

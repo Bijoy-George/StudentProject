@@ -23,6 +23,8 @@ Route::get('/', function () {
 
 Route::resource('student','App\Http\Controllers\StudentController');
 Route::post('student-list','App\Http\Controllers\StudentController@studentList');
+Route::resource('marks','App\Http\Controllers\MarksReportController');
+Route::post('mark-list','App\Http\Controllers\MarksReportController@searchList');
 
 
 require __DIR__.'/auth.php';
